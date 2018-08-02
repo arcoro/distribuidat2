@@ -34,8 +34,16 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-jdbc')
     compile('org.springframework.boot:spring-boot-starter-web')
     runtime('org.springframework.boot:spring-boot-devtools')
+    compile('org.springframework.cloud:spring-cloud-starter-config')
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     runtime('mysql:mysql-connector-java')
+
+    compile('org.springframework.boot:spring-boot-starter-amqp')
+    compile group: 'com.sun.mail', name: 'javax.mail', version: '1.6.1'
+    compile group: 'org.springframework', name: 'spring-context-support', version: '3.2.0.RELEASE'
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
+
 }
 
 dependencyManagement {
